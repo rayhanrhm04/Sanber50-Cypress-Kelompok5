@@ -9,7 +9,11 @@ describe('View and Update Shopping Cart', () => {
       cy.wait(1500);
       cy.get('a.action.showcart').click();
       cy.wait(1500);
-      cy.get('input#cart-398422-qty.input-text.qty').clear().type('2');
+      cy.get('a.action.showcart').click();
+      cy.wait(2500);
+      cy.get('a.action.viewcart').click();
+      cy.wait(1500);
+      cy.get('input#cart-399134-qty.input-text.qty').clear().type('2');
 
       cy.get('button.action.update').click();
     });
