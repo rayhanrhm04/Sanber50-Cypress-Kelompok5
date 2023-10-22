@@ -10,7 +10,7 @@ describe('Create an Account', ()=> {
         cy.get('input[name="email"]').type('rayhan1234@gmail.com');
         cy.get('input[name="password"]').type('NoPassword01');
         cy.get('input[name="password_confirmation"]').type('NoPassword01');
-        //cek button create an account
+        //click button create an account
         cy.get('button.action.submit').click();
     });
 });
